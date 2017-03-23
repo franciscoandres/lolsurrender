@@ -3,14 +3,8 @@
 players_votes = ["y", "y", "y", "y", "n"]
 positive, negative = 0, 0
 
-for vote in players_votes:
-	if "y" in vote:
-		positive += 1
-	elif "n" in vote:
-		negative += 1
-	else:
-		positive += 0
-		negative += 0
+positive = players_votes.count("y")
+negative = players_votes.count("n")
 
 if positive == 3 and negative == 2:
 	print("Not surrender because Rito pls... 3 IS GREATER THAN 2")
