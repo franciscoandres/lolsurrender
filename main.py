@@ -1,18 +1,18 @@
 # LOL Surrender at 20 shit
 
 players_votes = ["y", "y", "y", "y", "n"]
-positive, negative = 0, 0
+yes, no = 0, 0
 
-positive = players_votes.count("y")
-negative = players_votes.count("n")
+yes = players_votes.count("y")
+no  = players_votes.count("n")
 
-if positive == 3 and negative == 2:
+if yes == 3 and no == 2:
 	print("Not surrender because Rito pls... 3 IS GREATER THAN 2")
-elif positive > negative:
+elif yes > no:
 	print("Surrender")
-elif positive == negative:
+elif yes == no:
 	print("Not surrender")
 else:
 	print("Not surrender")
 
-print(positive, negative)
+print(yes, no)
